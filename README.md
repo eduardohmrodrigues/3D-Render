@@ -20,8 +20,8 @@ L - create new light source
 T - generate .obj of selected obj		
 < - select previous object				
 _>_ - select next object					
-+ - scale object in 1%					
-- - scale object in -1%					
+_+_ - scale object in 1%					
+_-_ - scale object in -1%					
 X - selected object changes to wire frame
 Press Z + scroll up   - dolly zoom in			
 Press Z + scroll down - dolly zoom out			
