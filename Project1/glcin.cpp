@@ -1,6 +1,5 @@
 #include "glcin.h"
 
-
 glcin::glcin()
 {
 }
@@ -285,7 +284,7 @@ void glcin::translateCamera(GLdouble x, GLdouble y, GLdouble z){
 	//
 	is_colliding = check_collision();
 	
-	if (is_colliding){
+	if (is_colliding && detect_collision){
 		directorOperations[0][3] += x;
 		directorOperations[1][3] += y;
 		directorOperations[2][3] += z;

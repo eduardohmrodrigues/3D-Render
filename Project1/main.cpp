@@ -11,6 +11,7 @@
 
 using namespace std;
 
+//SHOW FPS ON CONSOLE
 #define SHOW_FPS false
 
 //Variables==============
@@ -19,7 +20,7 @@ GLdouble width = 800, height = 800;			//window size
 GLdouble planeColor[4] = { 1, 1, 1, 0 };	//cartesianPlane color
 
 GLdouble cameraTranslateVelocity = 0.1;
-GLdouble cameraRotateVelocity = 1;
+GLdouble cameraRotateVelocity = 2;
 
 GLdouble scaleParameter = 0.1;				//parameter for apply scale in objects
 GLdouble objectTranslateVelocity = 1;
@@ -343,6 +344,7 @@ void init(){
 
 	gledu.next_position.x = 0; gledu.next_position.y = 0; gledu.next_position.z = 0;
 	gledu.is_colliding = false;
+	gledu.detect_collision = false;
 
 	gledu.camera.loadObject("Resources/Objects/camera.obj");
 }
@@ -383,24 +385,21 @@ int main(){
 	gledu.loadObject("Resources/Objects/yoda.obj");
 	gledu.loadObject("Resources/Objects/camel.obj");
 	gledu.translateObject(1, -2, 0, -10);
-	//gledu.loadObject("Resources/Objects/monitor.obj");
-	//gledu.translateObject(2, 4, 0, -10);
-	//gledu.loadObject("Resources/Objects/lion.obj");
-	//gledu.translateObject(3, -4, 0, -10);
-	//gledu.loadObject("Resources/Objects/whale.obj");
-	//gledu.translateObject(4, 6, 0, 0);
-	//gledu.rotateObject(4, 90, 0, 1, -10);
-	//gledu.loadObject("Resources/Objects/chimp.obj");
-	//gledu.translateObject(5, -6, 0, -10);
-	//gledu.loadObject("Resources/Objects/venus.obj");
-	//gledu.translateObject(6, 8, 0,-10);
-	//gledu.rotateObject(6, 180, 1, 0, 0);
-	//gledu.loadObject("Resources/Objects/dog.obj");
-	//gledu.translateObject(7, -8, 0, -10);
-	//gledu.rotateObject(7, -90, 0, 1, 0);
-	//gledu.loadObject("Resources/my_obj/spheretri.obj");
-	//gledu.translateObject(8, 10, 0, -10);
-	//gledu.loadObject("Resources/Objects/farmhouse.obj");
+	gledu.loadObject("Resources/Objects/lion.obj");
+	gledu.translateObject(2, -4, 0, -10);
+	gledu.loadObject("Resources/Objects/whale.obj");
+	gledu.translateObject(3, 6, 0, 0);
+	gledu.rotateObject(3, 90, 0, 1, -10);
+	gledu.loadObject("Resources/Objects/chimp.obj");
+	gledu.translateObject(4, -6, 0, -10);
+	gledu.loadObject("Resources/Objects/venus.obj");
+	gledu.translateObject(5, 8, 0,-10);
+	gledu.rotateObject(5, 180, 1, 0, 0);
+	gledu.loadObject("Resources/Objects/dog.obj");
+	gledu.translateObject(6, -8, 0, -10);
+	gledu.rotateObject(6, -90, 0, 1, 0);
+	gledu.loadObject("Resources/Objects/spheretri.obj");
+	gledu.translateObject(7, 10, 0, -10);
 	
 	gledu.translateCamera(0, 0, -10);
 

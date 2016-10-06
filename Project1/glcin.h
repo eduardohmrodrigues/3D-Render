@@ -32,6 +32,7 @@ public:
 
 	Point3D next_position;
 	bool is_colliding;
+	bool detect_collision;
 	
 
 public:

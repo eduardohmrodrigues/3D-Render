@@ -553,9 +553,9 @@ void glcinObject::calc_face_normals(){
 	Point3D vector1, vector2, normalVector;
 
 	for (int i = 0; i < faces.size(); i++){
-		v1 = faces[i].vertex[0];
-		v2 = faces[i].vertex[1];
-		v3 = faces[i].vertex[2];
+		v1 = faces[i].vertex[0] - 1;
+		v2 = faces[i].vertex[1] - 1;
+		v3 = faces[i].vertex[2] - 1;
 
 		vector1.x = vertex[v2].x - vertex[v1].x;
 		vector1.y = vertex[v2].y - vertex[v1].y;
