@@ -10,7 +10,7 @@ This project contains a .obj files reader and a OpenGL 3D renderer.
 
 ## Installation
 
-You only need to install the [Visual Studio IDE](www.visualstudio.com) and open the solution.
+You only need to install the [Visual Studio 2013](www.visualstudio.com) and open the solution.
 
 ## Controls
 
