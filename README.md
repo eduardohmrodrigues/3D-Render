@@ -19,7 +19,7 @@ F - director view mode in/out
 L - create new light source				
 T - generate .obj of selected obj		
 < - select previous object				
-> - select next object					
+_>_ - select next object					
 + - scale object in 1%					
 - - scale object in -1%					
 X - selected object changes to wire frame
